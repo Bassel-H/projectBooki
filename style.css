@@ -194,8 +194,14 @@ h2 {
 
 .hebergementsMarseille{
   width: 65%;
-  background-color: red;
 }
+
+.hebergementsMarseille a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
 
 .lesPlusPopulaires{
   width: 30%;
@@ -234,10 +240,28 @@ h2 {
     gap: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
+    margin-left: 15px;
 }
 
 .cardContent *{
   margin: 0%;
+}
+
+.cardContainer{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cardContainer-medium{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 5px 5px 15px;
+}
+
+.cardContainer-mediumTitle *{
+  margin-bottom: 5px;
 }
 
 .star-rating{
@@ -258,14 +282,52 @@ h2 {
 .card-medium img {
   border-radius: 20px 0 0 20px;
   width: 110px;
-  height: 130px;
+  height: 141px;
   object-fit: cover;
 }
 
-.cardContainer{
+.alignRow{
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.alignRow i{
+  color: #0065FC;
+}
+
+.sectionActivites {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sectionActivites h2{
+  width: 100%;
+}
+
+.bigCard {
+  width: 297.5px;
+  height: 439px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.bigCard img {
+  width: 100%;
+  height: calc(100% - 79px); /* 439 - (20+19+20+19 padding for h4) */
+  object-fit: cover;
+}
+
+.bigCard h4 {
+  padding: 20px 19px;
+  background-color: #fff;
+  box-shadow: 0px 3px 15px 0px #0000001A;
+  border-radius: 0 0 20px 20px;
+  flex-shrink: 0;
 }
 
 /* https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0&p=f  */
