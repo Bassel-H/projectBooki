@@ -336,6 +336,7 @@ h2 {
 }
 
 footer {
+  background-color: #F2F2F2;
   margin: auto 50px;
   padding: 50px 0px;
   display: flex;
