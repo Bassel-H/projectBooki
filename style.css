@@ -3,6 +3,12 @@
   src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf); /* url of the font */
 }
 
+
+html{
+  width: 1440px;
+  margin: auto;
+}
+
 * {
   font-family: Raleway; /* use font */
   margin-top: 0%;
@@ -159,6 +165,7 @@ h2 {
 .info{
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .info div{
@@ -176,8 +183,89 @@ h2 {
 
 .info p{
   text-align: center;
-  margin: 10px
+  margin: 10px;
 }
 
+.sectionHebergement {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
 
-/* https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0&p=f */
+.hebergementsMarseille{
+  width: 65%;
+  background-color: red;
+}
+
+.lesPlusPopulaires{
+  width: 30%;
+  background-color: blue;
+}
+
+.lesPlusPopulaires, .hebergementsMarseille{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  background-color: #F2F2F2;
+  border-radius: 15px;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 230px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.cardContent *{
+  margin: 0%;
+}
+
+.star-rating{
+  display: flex;
+  flex-direction: row;
+  color: #0065FC;
+}
+
+.card-medium {
+  padding: 5px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 369px;
+}
+
+.card-medium img {
+  border-radius: 20px 0 0 20px;
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.cardContainer{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0&p=f  */
