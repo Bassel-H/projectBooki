@@ -47,6 +47,14 @@ nav menu li a {
   font-size: 16px;
 }
 
+.activeLink{
+  border-top: #0065FC 2px solid;
+}
+
+.activeLink a{
+  color: #0065FC;
+}
+
 nav menu li:hover {
   border-top: #0065FC 2px solid;
 }
@@ -55,7 +63,7 @@ nav menu li a:hover {
   color: #0065FC;
 }
 
-main {
+main, footer {
   margin: auto 50px;
 }
 
@@ -126,6 +134,27 @@ h2 {
   padding-left: 15px;
   padding-right: 15px;
 
+}
+
+.rechercheForm  div:nth-child(2) i{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: #0065FC 0px solid;
+  border-radius: 15px;
+  background-color: #0065FC;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
 }
 
 .filtres {
@@ -354,11 +383,137 @@ footer menu {
   list-style: none;
   padding: 20px;
   gap: 15px;
-  padding: 0px;
+
 }
 
 footer a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 1024px) { /* tablette */
+
+  html, body{
+    width: 100%;
+  }
+
+  .sectionHebergement {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .hebergementsMarseille{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 258px;
+  }
+
+  .alignRow{
+    width: 100%;
+  }
+
+  .lesPlusPopulaires{
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card-medium {
+    width: 264px;
+  }
+
+  .bigCard {
+    width: 193.5px;
+    height: 270px;
+  }
+
+}
+
+@media (max-width: 768px) { /* mobile */
+  html, body{
+    width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0px 50px 20px 0px;
+  }
+
+  nav menu{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    gap: 0;
+
+  }
+
+  .activeLink{
+    border-top: white 0px solid;
+    border-bottom: #0065FC 2px solid !important;
+  }
+
+  nav menu li {
+    padding-top: 0%;
+    padding-bottom: 14px;
+    width: 100%;
+    border-bottom: #F2F2F2 2px solid;
+  }
+
+  nav menu li:hover {
+    border-top: white 0px solid;
+    border-bottom: #0065FC 0px solid;
+  }
+
+  main{
+    margin: 0px 20px;
+  }
+
+  .filtres{
+    flex-wrap: wrap;
+  }
+
+  .filtres ul{
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0%;
+  }
+
+  .filtres ul li{
+    min-width: 110px;
+  }
+
+  .hidden{
+  display: auto;
+  visibility: visible;
+  }
+
+  .hiddenMobile{
+  display: none;
+  visibility: hidden;
+  }
+
+  .rechercheForm div:nth-child(2) input {
+    border: #F2F2F2 0px solid;
+}
+
+  .rechercheForm div:nth-child(2) {
+    border: #F2F2F2 1px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
 }
 /* https://www.figma.com/design/r9YJyUkpVdrxzBBKGH7reY/Maquettes-Booki--desktop--mobile--tablette-?node-id=3-0&p=f  */
