@@ -338,6 +338,12 @@ h2 {
 
 .sectionActivites h2{
   width: 100%;
+
+}
+
+.sectionActivites a{
+  color: #000000;
+  text-decoration: none;
 }
 
 .bigCard {
@@ -430,7 +436,21 @@ footer a {
 
   .bigCard {
     width: 193.5px;
-    height: 270px;
+    height: auto;
+  }
+
+  .bigCard img{
+    min-height: 200px;
+    max-height: 200px;
+  }
+  
+  .sectionActivites{
+    justify-content: left;
+    gap: 30px;
+  }
+
+  .bigCard h4{
+    height: 50px;
   }
 
 }
@@ -552,7 +572,11 @@ footer a {
     margin-left: 20px;
     margin-right: 20px;
   }
-
+  
+  .sectionActivites a {
+    width: 100%;
+  }
+  
   .bigCard {
     width: 100%;
   }
