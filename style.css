@@ -299,6 +299,10 @@ h2 {
   color: #0065FC;
 }
 
+.unactive-star{
+  color: #F2F2F2;
+}
+
 .card-medium {
   padding: 5px;
   background-color: #FFFFFF;
